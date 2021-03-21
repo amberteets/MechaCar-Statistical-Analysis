@@ -79,3 +79,15 @@ Because the p-value of 0.6072 is not less than the significance level, we fail t
 <kbd> <img src="https://github.com/amberteets/MechaCar-Statistical-Analysis/blob/main/Resources/ttest_lot3.png" /> <kbd>
   
 Because the p-value of 0.04168 is less than the significance level, there is sufficient evidence to reject the null hypothesis. There *is* a statistically significant difference between the observed mean PSI of Lot 3 and the population mean of 1500.
+
+## Study Design: MechaCar vs. Competition
+
+To quantify how MechaCar performs against its competition, a statistical study could be undertaken to determine whether or not there is a statistically significant difference in MechaCar's performance on various metrics when compared to other auto manufacturers. Further study of consumer preferences is needed to determine which exact metrics to compare. However, using safety rating as an example, the null and alternate hypotheses would be as follows:
+H<sub>0</sub>: There is no statistical difference between the mean safety rating of a sample of MechaCar vehicles and the mean safety rating of a sample of a competitor's vehicles.
+H<sub>a</sub>: There is a statistical difference between the mean safety rating of a sample of MechaCar vehicles and the mean safety rating of a sample of a competitor's vehicles.
+
+To test the hypothesis, a pair t-test is appropriate because we are comparing two samples from different populations.
+
+To perform this test, necessary data include:
+- A sufficiently large sample of safety ratings from MechaCar's population of vehicles
+- A sufficiently large sample of safety ratings from the competitor's population of vehicles
