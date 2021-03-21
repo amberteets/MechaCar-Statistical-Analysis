@@ -26,3 +26,14 @@ The multiple R-squared value from the linear regression model of 0.7149 suggests
 
 ### Accuracy of Linear Model
 This linear model predicts mpg values for MechaCar prototypes somewhat effectively. The results of the linear regression suggest that the model is more effective than a purely random model. However, the lack of significant coefficients/variables suggests that the model may be *overfit*. 
+
+## Summary Statistics on Suspension Coils
+
+The design specifications for MechaCar suspension coils stipulate that the variance of the suspension coils must not exceed 100 pounds per square inch (PSI). To test adherence to this requirement, summary statistics were calculated for suspension coils as a whole, as well as by each manufacturing lot.
+
+#### Fig. 2.0: Total Summary
+![total_summary](https://github.com/amberteets/MechaCar-Statistical-Analysis/blob/main/Resources/total_summary.png)
+
+
+#### Fig. 2.1 Lot Summary
+![lot_summary](https://github.com/amberteets/MechaCar-Statistical-Analysis/blob/main/Resources/lot_summary.png)
