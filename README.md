@@ -10,8 +10,8 @@ To predict the gas mileage (mpg) of MechaCar proptypes, multiple linear regressi
 - Ground Clearance
 - All-Wheel Drive (AWD)
 
-H<sub>0</sub>: The slope of the linear model is 0
-H<sub>a</sub>: The slope of the linear model is not 0
+H<sub>0</sub>: The slope of the linear model is 0.
+H<sub>a</sub>: The slope of the linear model is not 0.
 
 The summary of results was as follows:
 
