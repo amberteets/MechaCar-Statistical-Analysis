@@ -83,8 +83,8 @@ Because the p-value of 0.04168 is less than the significance level, there is suf
 ## Study Design: MechaCar vs. Competition
 
 To quantify how MechaCar performs against its competition, a statistical study could be undertaken to determine whether or not there is a statistically significant difference in MechaCar's performance on various metrics when compared to other auto manufacturers. Further study of consumer preferences is needed to determine which exact metrics to compare. However, using safety rating as an example, the null and alternate hypotheses would be as follows:
-H<sub>0</sub>: There is no statistical difference between the mean safety rating of a sample of MechaCar vehicles and the mean safety rating of a sample of a competitor's vehicles.
-H<sub>a</sub>: There is a statistical difference between the mean safety rating of a sample of MechaCar vehicles and the mean safety rating of a sample of a competitor's vehicles.
+- H<sub>0</sub>: There is no statistical difference between the mean safety rating of a sample of MechaCar vehicles and the mean safety rating of a sample of a competitor's vehicles.
+- H<sub>a</sub>: There is a statistical difference between the mean safety rating of a sample of MechaCar vehicles and the mean safety rating of a sample of a competitor's vehicles.
 
 To test the hypothesis, a pair t-test is appropriate because we are comparing two samples from different populations.
 
