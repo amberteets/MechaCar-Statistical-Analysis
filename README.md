@@ -10,14 +10,14 @@ To predict the gas mileage (mpg) of MechaCar proptypes, multiple linear regressi
 - Ground Clearance
 - All-Wheel Drive (AWD)
 
-H<sub>0</sub>: The slope of the linear model is 0.
-
-H<sub>a</sub>: The slope of the linear model is not 0.
+Null / Alternate Hypotheses:
+- H<sub>0</sub>: The slope of the linear model is 0.
+- H<sub>a</sub>: The slope of the linear model is not 0.
 
 The summary of results was as follows:
 
 #### Fig. 1.0
-![MechaCar_LinReg_Summary](https://github.com/amberteets/MechaCar-Statistical-Analysis/blob/main/Resources/MechaCar_LinReg_Sum.png)
+<kbd> <img src="https://github.com/amberteets/MechaCar-Statistical-Analysis/blob/main/Resources/MechaCar_LinReg_Sum.png" /> <kbd>
 
 ### Predictive Coefficients
 Based on the Pr(>|t|) values displayed above, which represent the probability that each variable/coefficient provides a random amount of variance to the linear model, **vehicle length** provides the greatest degree of non-random variance to the mpg values in the dataset, followed by **ground clearance**. 
@@ -51,8 +51,9 @@ When PSI data is examined lot-by-lot, it is clear that Manufacturing Lots 1 & 2 
 Note: All subsequent t-tests assume a significance level of 0.05.
 
 ### All Manufacturing Lots
-H<sub>0</sub>: There is no statistical difference between the observed sample mean PSI of all manufacturing lots and the population mean of 1500 PSI.
-H<sub>a</sub>: There is a statistical difference between the observed sample mean PSI of all manufacturing lots and the population mean of 1500 PSI.
+Null / Alternate Hypotheses:
+- H<sub>0</sub>: There is no statistical difference between the observed sample mean PSI of all manufacturing lots and the population mean of 1500 PSI.
+- H<sub>a</sub>: There is a statistical difference between the observed sample mean PSI of all manufacturing lots and the population mean of 1500 PSI.
 
 #### Fig. 3.0: T-test for All Lots
 <kbd> <img src="https://github.com/amberteets/MechaCar-Statistical-Analysis/blob/main/Resources/ttest_all.png" /> <kbd>
@@ -60,8 +61,9 @@ H<sub>a</sub>: There is a statistical difference between the observed sample mea
 Because the p-value of 0.06028 is not less than the significance level, we fail to reject the null hypothesis. There is insufficient evidence to infer a statistical difference between the observed sample mean PSI and 1500.
 
 ### Individual Manufacturing Lots
-H<sub>0</sub>: There is no statistical difference between the observed sample mean PSI of each manufacturing lot and the population mean of 1500 PSI.
-H<sub>a</sub>: There is a statistical difference between the observed sample mean PSI of each manufacturing lot and the population mean of 1500 PSI.
+Null / Alternate Hypotheses:
+- H<sub>0</sub>: There is no statistical difference between the observed sample mean PSI of each manufacturing lot and the population mean of 1500 PSI.
+- H<sub>a</sub>: There is a statistical difference between the observed sample mean PSI of each manufacturing lot and the population mean of 1500 PSI.
 
 #### Fig. 3.1: T-test for Lot 1
 <kbd> <img src="https://github.com/amberteets/MechaCar-Statistical-Analysis/blob/main/Resources/ttest_lot1.png" /> <kbd>
