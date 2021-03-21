@@ -44,3 +44,35 @@ When PSI data is examined lot-by-lot, it is clear that Manufacturing Lots 1 & 2 
 
 #### Fig. 2.1 Lot Summary
 <kbd> <img src="https://github.com/amberteets/MechaCar-Statistical-Analysis/blob/main/Resources/lot_summary.png" /> <kbd>
+  
+## T-Tests on Suspension Coils
+
+Note: All subsequent t-tests assume a significance level of 0.05.
+
+### All Manufacturing Lots
+H<sub>0</sub>: There is no statistical difference between the observed sample mean PSI of all manufacturing lots and the population mean of 1500 PSI.
+H<sub>a</sub>: There is a statistical difference between the observed sample mean PSI of all manufacturing lots and the population mean of 1500 PSI.
+
+#### Fig. 3.0: T-test for All Lots
+<kbd> <img src="https://github.com/amberteets/MechaCar-Statistical-Analysis/blob/main/Resources/ttest_all.png" /> <kbd>
+  
+Because the p-value of 0.06028 is not less than the significance level, we fail to reject the null hypothesis. There is insufficient evidence to infer a statistical difference between the observed sample mean PSI and 1500.
+
+### Individual Manufacturing Lots
+H<sub>0</sub>: There is no statistical difference between the observed sample mean PSI of each manufacturing lot and the population mean of 1500 PSI.
+H<sub>a</sub>: There is a statistical difference between the observed sample mean PSI of each manufacturing lot and the population mean of 1500 PSI.
+
+#### Fig. 3.1: T-test for Lot 1
+<kbd> <img src="https://github.com/amberteets/MechaCar-Statistical-Analysis/blob/main/Resources/ttest_lot1.png" /> <kbd>
+  
+Because the p-value of 1 is not less than the significance level, we fail to reject the null hypothesis. There is insufficient evidence to infer a statistical difference between the observed sample mean PSI for Lot 1 and the population mean of 1500.
+
+#### Fig. 3.2: T-test for Lot 2
+<kbd> <img src="https://github.com/amberteets/MechaCar-Statistical-Analysis/blob/main/Resources/ttest_lot2.png" /> <kbd>
+  
+Because the p-value of 0.6072 is not less than the significance level, we fail to reject the null hypothesis. There is insufficient evidence to infer a statistical difference between the observed sample mean PSI for Lot 2 and the population mean of 1500.
+
+#### Fig. 3.3: T-test for Lot 3
+<kbd> <img src="https://github.com/amberteets/MechaCar-Statistical-Analysis/blob/main/Resources/ttest_lot3.png" /> <kbd>
+  
+Because the p-value of 0.04168 is less than the significance level, there is sufficient evidence to reject the null hypothesis. There *is* a statistically significant difference between the observed mean PSI of Lot 3 and the population mean of 1500.
