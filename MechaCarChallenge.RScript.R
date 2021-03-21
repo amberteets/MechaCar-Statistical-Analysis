@@ -17,6 +17,7 @@ lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle +
 summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
              ground_clearance + AWD, data = mcar))
 
+# -----------------------------------------------------------------------
 # DELIVERABLE 2
 # Visualize the suspension coil's PSI continuous variable across all lots
 # Summary statistics on PSI metrics for each lot
@@ -34,4 +35,23 @@ total_summary <- sus_coil %>% summarize(Mean_PSI=mean(PSI),
 lot_summary <- sus_coil %>% group_by(Manufacturing_Lot) %>%
   summarize(Mean_PSI=mean(PSI), Median_PSI=median(PSI),
             Variance=var(PSI), SD=sd(PSI), .groups = "keep")
-                                        
+
+# -----------------------------------------------------------------------
+# DELIVERABLE 3
+# Perform t-tests to determine if all manufacturing lots and each lot
+# individually are statistically different from population mean (1500 PSI)
+
+# All Lots
+t.test(sus_coil$PSI, mu=1500)
+
+# Lot 1
+lot1_PSI <- subset(sus_coil, Manufacturing_Lot == "Lot1", select = "PSI")
+t.test(lot1_PSI, mu=1500)
+
+# Lot 2
+lot2_PSI <- subset(sus_coil, Manufacturing_Lot == "Lot2", select = "PSI")
+t.test(lot2_PSI, mu=1500)
+
+# Lot 3
+lot3_PSI <- subset(sus_coil, Manufacturing_Lot == "Lot3", select = "PSI")
+t.test(lot3_PSI, mu=1500)
